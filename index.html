@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🐶 Explorador de Razas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🐶 Explorador de Razas</h1>
+    <p>Consulta razas, imágenes y subrazas usando la Dog CEO API</p>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h2>1. Ver todas las razas</h2>
+      <p>Obtiene la lista completa de razas disponibles.</p>
+      <button id="btn-listar">Cargar razas</button>
+      <ul id="lista-razas"></ul>
+    </section>
+
+    <section class="tarjeta">
+      <h2>2. Imagen de una raza</h2>
+      <p>Escribe una raza para ver una foto aleatoria.</p>
+      <div class="fila">
+        <input type="text" id="input-raza" placeholder="ej: beagle, poodle, husky" />
+        <button id="btn-imagen">Ver imagen</button>
+      </div>
+      <img id="foto-raza" src="" alt="" />
+      <p id="error-imagen" class="error"></p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>3. Subrazas de una raza</h2>
+      <p>Escribe una raza para ver sus subrazas (si tiene).</p>
+      <div class="fila">
+        <input type="text" id="input-subraza" placeholder="ej: bulldog, spaniel, terrier" />
+        <button id="btn-subrazas">Ver subrazas</button>
+      </div>
+      <ul id="lista-subrazas"></ul>
+      <p id="error-subraza" class="error"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

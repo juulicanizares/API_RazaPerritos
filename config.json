@@ -1,0 +1,12 @@
+{
+  "api": {
+    "base": "https://dog.ceo/api",
+    "razas": "/breeds/list/all",
+    "imagenRaza": "/breed/{raza}/images/random",
+    "imagenesSubraza": "/breed/{raza}/{subraza}/images/random/3"
+  },
+  "app": {
+    "titulo": "🐶 Explorador de Razas",
+    "descripcion": "Consulta razas, fotos y subrazas con la Dog CEO API"
+  }
+}
